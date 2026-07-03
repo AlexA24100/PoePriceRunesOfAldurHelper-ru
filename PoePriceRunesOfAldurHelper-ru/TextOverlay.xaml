@@ -1,0 +1,15 @@
+<Window x:Class="PoePriceRunesOfAldurHelperRu.TextOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None" AllowsTransparency="True"
+        Background="Transparent" Topmost="True"
+        ShowInTaskbar="False" SizeToContent="WidthAndHeight"
+        WindowStartupLocation="Manual" IsHitTestVisible="False"
+        Focusable="False" ShowActivated="False">
+  <Border x:Name="TextBorder" CornerRadius="4"
+          Background="#A0000000"
+          Padding="8,4,8,4"
+          IsHitTestVisible="False">
+    <StackPanel x:Name="ContentPanel" Orientation="Horizontal" />
+  </Border>
+</Window>

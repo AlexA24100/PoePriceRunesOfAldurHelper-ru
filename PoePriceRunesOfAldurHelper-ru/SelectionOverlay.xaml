@@ -1,0 +1,13 @@
+<Window x:Class="PoePriceRunesOfAldurHelperRu.SelectionOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None" AllowsTransparency="True"
+        Background="Transparent" Topmost="True"
+        ShowInTaskbar="False" Cursor="Cross"
+        WindowStartupLocation="Manual"
+        PreviewKeyDown="Window_PreviewKeyDown">
+  <Canvas Name="SelectionCanvas" Background="#80000000"
+          MouseDown="Canvas_MouseDown"
+          MouseMove="Canvas_MouseMove"
+          MouseUp="Canvas_MouseUp" />
+</Window>

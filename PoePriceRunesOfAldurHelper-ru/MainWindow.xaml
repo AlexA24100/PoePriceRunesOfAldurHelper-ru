@@ -1,0 +1,42 @@
+<Window x:Class="PoePriceRunesOfAldurHelperRu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PoE2 Overlay" Height="400" Width="420"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Icon="pack://application:,,,/Icons/Chaos.png">
+  <StackPanel Margin="20" VerticalAlignment="Center">
+    <TextBlock Text="PoE2 Overlay распознавания" FontSize="18"
+               FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,15" />
+
+    <Button Name="BtnSelectArea" Content="Задать область распознавания (F7)"
+            Height="40" FontSize="13" Margin="0,0,0,8" Click="BtnSelectArea_Click" />
+
+    <Button Name="BtnStartRecognition"
+            Content="Запустить распознавание (F8)"
+            Height="40" FontSize="13" Margin="0,0,0,8"
+            Click="BtnStartRecognition_Click" IsEnabled="False" />
+
+    <Button Name="BtnUpdatePrices"
+            Content="Обновить цены (F6)"
+            Height="40" FontSize="13" Margin="0,0,0,8"
+            Click="BtnUpdatePrices_Click" />
+
+    <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="0,5,0,0">
+      <StackPanel>
+        <TextBlock Name="TxtRegion" Text="Область: не задана" FontSize="12" />
+        <TextBlock Name="TxtStatus" Text="Статус: остановлено"
+                   FontSize="12" Margin="0,4,0,0" />
+        <TextBlock Name="TxtPriceDate" Text="Цены: не загружены"
+                   FontSize="12" Margin="0,4,0,0" />
+      </StackPanel>
+    </Border>
+
+    <TextBlock FontSize="11" TextAlignment="Center" Margin="0,10,0,0">
+      <Hyperlink NavigateUri="https://github.com/AlexA24100"
+                 RequestNavigate="Hyperlink_RequestNavigate">
+        github.com/AlexA24100
+      </Hyperlink>
+    </TextBlock>
+  </StackPanel>
+</Window>

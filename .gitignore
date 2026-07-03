@@ -1,0 +1,21 @@
+# .NET build output
+PoePriceRunesOfAldurHelper-ru/bin/
+PoePriceRunesOfAldurHelper-ru/obj/
+
+# IDE files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# Runtime generated files
+recognition_log.txt
+settings.json

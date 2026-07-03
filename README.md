@@ -4,8 +4,9 @@
 (встроенный Windows OCR) и показывает цену каждого предмета в Divine / Chaos / Exalted 
 с иконками валют.
 
-##Демонстрация
-https://youtu.be/RYOlUQSEEi0?si=pEk9cENNw5-CoN9D
+## Демонстрация
+
+[![PoE2 Overlay — демонстрация](https://img.youtube.com/vi/RYOlUQSEEi0/maxresdefault.jpg)](https://youtu.be/RYOlUQSEEi0)
 
 ## Возможности
 
@@ -25,8 +26,16 @@ https://youtu.be/RYOlUQSEEi0?si=pEk9cENNw5-CoN9D
 - **Path of Exile 2** в режиме **borderless window** (не exclusive fullscreen)
 - Русский язык в системе (Windows OCR для русского встроен в ОС)
 
+## Использование
+Запустить run_overlay.bat
+В игре нажать F7 → выделить область с текстом
+Нажать F8 — начать распознавание
+F8 повторно — остановить
+F6 — обновить цены с poe.ninja
+
 ## Сборка из исходников
 
 ```cmd
 cd PoePriceRunesOfAldurHelper-ru
 dotnet build -c Release
+
